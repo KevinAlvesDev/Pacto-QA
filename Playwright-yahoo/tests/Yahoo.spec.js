@@ -8,7 +8,7 @@ test('Buscar "Pacto Soluções" no Yahoo e clicar no botão de consentimento', a
     page.waitForNavigation({ waitUntil: 'domcontentloaded' }),
     page.keyboard.press('Enter'),
   ]);
-
+  
   const resultados = page.locator('#web > ol > li');
   await expect(resultados.first()).toBeVisible();
 

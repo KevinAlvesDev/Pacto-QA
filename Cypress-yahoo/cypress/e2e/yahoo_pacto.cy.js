@@ -13,7 +13,6 @@ describe('Teste UOL - scroll até o final da página de termos', () => {
     cy.origin('https://sobreuol.noticias.uol.com.br', () => {
       cy.url({ timeout: 30000 }).should('include', 'normas-de-seguranca-e-privacidade')
 
-      // Scroll até o final da página
       cy.scrollTo('bottom', { duration: 1000 })
     })
   })
